@@ -1,11 +1,12 @@
+
 #include <iostream>
 using namespace std;
 
-const float pi = 3.14159f;
-float radius = 25.0f;
-float area = pi * radius * radius;
+float fahrenheit = 95.0f;
+float celsius = fahrenheit - 32 * 0.5556;
+
 
 int main()
 {
-	cout << "The area of a circle with a radius of " << radius << " is " << area << endl;
+	cout << fahrenheit << "F is equil to " << celsius << "C. " << endl;
 }
