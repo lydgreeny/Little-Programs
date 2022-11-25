@@ -4,7 +4,7 @@ using namespace std;
 int num_of_haribos = 40;
 int num_of_students = 14;
 int num_of_bags_each = num_of_haribos / num_of_students;
-int food_left_for_me = num_of_haribos - (num_of_haribos / num_of_bags_each);
+int food_left_for_me = num_of_haribos - (num_of_students * num_of_bags_each);
 
 int main()
 {
