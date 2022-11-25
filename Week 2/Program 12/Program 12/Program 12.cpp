@@ -18,31 +18,29 @@ cin >> temp;
 
 if (weather == 1)
 {
-if (temp >= 15)
-{
-    cout << "Wear a light raincoat" << endl;
-}
-else(temp < 15);
+    if (temp >= 15)
+    {
+        cout << "Wear a light raincoat" << endl;
+    }
+    else(temp <= 15);
     {
         cout << "Wear a thick coat" << endl;
     }
 }
-//if (weather == 2)
-//{
-    if (temp > 5)
-    {
+if (weather == 2)
+{
+   if (temp > 5)
+   {
         cout << "Wrap up arm" << endl;
-    }
-    else if (temp <= 0)
-    {
+   }
+   else if (temp <= 0)
+   {
         cout << "Wrap up super warm" << endl;
-    }
-    else
-    {
+   }
+   else
+   {
         cout << "Have a nice day! It is neither raining or snowing" << endl;
-    }
-//}
-
-
+   }
+}
 }
 
