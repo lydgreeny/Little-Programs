@@ -1,33 +1,32 @@
 #include <iostream>
 using namespace std; 
 
-int playerInput;
+char playerInput;
 
 int main()
 {
-cout << "Choose your difficulty! (at your own risk, player's discretion is advised)" << endl;
-cout << "A little scary but not too much" << endl;
-cout << "Your avarage joe" << endl;
-cout << "Challenge me!" << endl;
-cout << "Sicko mode" << endl;
+cout << "Choose your difficulty!" << endl;
+cout << "1: A little scary but not too much" << endl;
+cout << "2: Your avarage joe" << endl;
+cout << "3: Challenge me!" << endl;
+cout << "4: Sicko mode" << endl;
 cin >> playerInput;
 
 switch (playerInput)
 	{
-	case "A little scary but not too much":
+	case '1':
 		cout << "get cozy!" << endl;
 	break;
 
-	case"Your avarage joe":
+	case'2':
 		cout << "so avarage" << endl;
 	break;
 
-
-	case "Challenge me!":
-		cout << "ard as nails" << endl;
+	case '3':
+		cout << "'ard as nails" << endl;
 	break;
 
-	case "Sicko mode":
+	case '4':
 		cout << "phf good luck!" << endl;
 	break;
 
