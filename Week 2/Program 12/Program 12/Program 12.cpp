@@ -42,6 +42,6 @@ int main()
 		{
 			cout << "Have a nice day! It is neither raining or snowing" << endl;
 		}
-		//}
+		
 	}
 }
