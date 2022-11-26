@@ -1,20 +1,31 @@
-// Program 13.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-
 #include <iostream>
+using namespace std; 
+
+char status;
+int game_choice;
 
 int main()
 {
-    std::cout << "Hello World!\n";
+    cout << "Tell me if you're a Student with S, a Teacher with T or O for other" << endl;
+    cin >> status;
+
+    cout << "Would you like game 1 or 2? " << endl;
+    cin >> game_choice;
+
+    //Debug
+    // cout << status << endl;
+    // cout << game_choice << endl;
+
+    if (game_choice == 1 )
+    {
+		cout << "You can get a 20% discount" << endl;
+	}
+	else if (game_choice == 2 )
+	{
+		cout << "You get a 10% discount" << endl;
+	}
+	else
+	{
+		cout << "You are not entilted to any discount" << endl;
+	}
 }
-
-// Run program: Ctrl + F5 or Debug > Start Without Debugging menu
-// Debug program: F5 or Debug > Start Debugging menu
-
-// Tips for Getting Started: 
-//   1. Use the Solution Explorer window to add/manage files
-//   2. Use the Team Explorer window to connect to source control
-//   3. Use the Output window to see build output and other messages
-//   4. Use the Error List window to view errors
-//   5. Go to Project > Add New Item to create new code files, or Project > Add Existing Item to add existing code files to the project
-//   6. In the future, to open this project again, go to File > Open > Project and select the .sln file
