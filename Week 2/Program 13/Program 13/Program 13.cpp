@@ -16,16 +16,19 @@ int main()
     // cout << status << endl;
     // cout << game_choice << endl;
 
-    if (game_choice == 1 )
-    {
-		cout << "You can get a 20% discount" << endl;
-	}
-	else if (game_choice == 2 )
+	if (status == 1)
 	{
-		cout << "You get a 10% discount" << endl;
-	}
-	else
-	{
-		cout << "You are not entilted to any discount" << endl;
+		if (game_choice == 1)
+		{
+			cout << "You can get a 20% discount" << endl;
+		}
+		else if (game_choice == 2)
+		{
+			cout << "You get a 10% discount" << endl;
+		}
+		else
+		{
+			cout << "You are not entilted to any discount" << endl;
+		}
 	}
 }
