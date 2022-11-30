@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std; 
 
-char status;
+const char status;
 int game_choice;
 
 int main()
@@ -16,7 +16,7 @@ int main()
     // cout << status << endl;
     // cout << game_choice << endl;
 
-	if (status == 1)
+	if (status = "S" || status = "T")
 	{
 		if (game_choice == 1)
 		{
@@ -30,5 +30,10 @@ int main()
 		{
 			cout << "You are not entilted to any discount" << endl;
 		}
+
+	else if
+	{}
+	else
+	{}
 	}
 }
