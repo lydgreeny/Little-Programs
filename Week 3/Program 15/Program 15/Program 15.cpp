@@ -5,22 +5,16 @@ int playerInput;
 
 int main()
 {
-	cout << "Give me a number between 1-10" << endl;
-	cin >> playerInput;
-	for (playerInput)
-	{
-	}
+   cout << "Enter a number ";
+   cin >> playerInput;
 
-	cout << "Would you like to go again?" << endl;
-	cin >> playerInput;
-
-	if (playerInput == 'Y')
-	{
-		cout << "" << endl;
-	}
-	else
-	{
-		cout << "" << endl;
-	}
+   for (int i = 1; i <= playerInput; ++i)
+   {
+       for (int j = 1; j <= i; ++j)
+       {
+       cout << "* ";
+       }
+       cout << "\n";
+   }
 }
 
