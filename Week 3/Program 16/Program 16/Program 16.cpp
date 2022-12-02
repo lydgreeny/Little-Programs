@@ -6,10 +6,9 @@ int playerInput;
 
 int main()
 {
-    cout << "Player life = " << playerLife << endl;
-
     for (int i = 1; i <= 10; i++)
     {
+        cout << "Players health = " << playerLife << endl;
         cout << "How much damage would you like to deal? " << endl;
 
         cin >> playerInput;
