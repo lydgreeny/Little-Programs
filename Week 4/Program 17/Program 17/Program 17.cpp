@@ -1,19 +1,19 @@
 #include <iostream>
 using namespace std; 
 
+void addTwo(int n1);
 
-
-void addTwoNumbers(int num1, int num2)
-{
-    cout << num1 << "+" << num2 << "=" << num1 + num2 << endl;
-}
 
 int main()
 {
-    addTwoNumbers(10, 5 )
+    int n1 = 6;
+    cout << "MAIN [before]: n1 = " << n1 << endl;
+    addTwo(n1);
+    cout << "MAIN [after]: n1 = " << n1 << endl;
+}
 
-
-
-
-    return 0;
+void addTwo(int n1)
+{
+    n1 += 2;
+    cout << "Function: num = " << n1 << endl;
 }
