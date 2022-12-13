@@ -1,15 +1,17 @@
 #include <iostream>
 using namespace std;
-
+//crm
 int userInput1;
 int userInput2;
 int userInput3;
 int answer = userInput1 *= 10;
 int answer2 = answer /= 3;
-void smallestNumber(int n1, int n2);
+
+int smallestNumber(int n1, int n2);
 
 int main()
 {
+	int smallestNumber;
 	for (int i = 0; i < 3; i++)
 	{
 		cout << "Please imput a number" << endl;
@@ -34,10 +36,12 @@ int main()
 			cout << endl;
 		}
 
+		int smallestNumber(int userInput1, int userInput2);
 	}
 
 }
-	void smallestNumber(int n1, int n2);
+
+	int smallestNumber(int n1, int n2)
 	{
 		for (int i = 0; i < 3; i++)
 		{
@@ -47,7 +51,7 @@ int main()
 			cout << endl;
 
 
-			cout << "and another" << endl;
+			cout << "and another" << endl; 
 			cin >> userInput2;
 			cout << userInput2 << "divided by 3 = " << answer2 << endl;
 			cout << endl;
