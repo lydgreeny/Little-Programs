@@ -81,4 +81,24 @@ void attackChoice(int n1)
 
 bool playState()
 {
+	char playAgain; 
+
+	if (enemyHealth <= 0);
+	{
+		cout << "You have killed the troll and won" << endl;
+		cout << "Play again? Y or N" << endl;
+		cin >> playerChoice;
+		if (playerChoice == 'Y')
+		{
+
+		}
+		else
+		{
+			troo == false;
+		}
+	}
+
+
+	return troo;
+
 }
