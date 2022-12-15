@@ -26,19 +26,21 @@ bool oddOReven(int n1)
 {
 	if (n1 % 2 == 0)
 	{
-	    numOfEven++;
-	   // evenTotal + n1;
+	   numOfEven++;
+	   evenTotal += n1;
 	}
 	else
 	{
 		numOfOdd++;
-		//oddTotal;
+	    oddTotal += n1;
 	}
 	return n1;
 }
 
 void outputResults(int numOfOdd, int oddTotal, int numOfEven, int evenTotal)
 {
-	cout << "Number of odd = " << numOfOdd<< endl;
+	cout << "Number of odd = " << numOfOdd << endl;
+	cout << "Total number of odd numbers " << oddTotal << endl;
     cout << "Number of even = " << numOfEven << endl;
+	cout << "Total number of even numbers " << evenTotal << endl; 
 }
