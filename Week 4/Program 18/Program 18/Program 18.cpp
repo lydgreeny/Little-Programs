@@ -1,32 +1,45 @@
 #include <iostream>
 using namespace std;
-//crm
-int userInput1;
-int userInput2;
-int userInput3;
-int answer = userInput1 *= 10;
-int answer2 = answer /= 3;
 
-int smallestNumber(int n1, int n2);
+void smallestNumber(int n1, int n2);
+float multiply(int n1);
+float divide(float n1);
 
 int main()
 {
-	int smallestNumber;
-	for (int i = 0; i < 3; i++)
+int userInput1;
+int userInput2;
+float answer;
+
+for (int i = 0; i < 3; i++)
 	{
-		cout << "Please imput a number" << endl;
+		cout << "Please input a number" << endl;
 		cin >> userInput1;
 		cout << "and another" << endl;
 		cin >> userInput2;
+		smallestNumber(userInput1, userInput2);
+	}
 
-		if (userInput1 > userInput2)
+	for (int i = 0; i < 3; i++)
+	{
+		cout << "Please input a number to be multiplied " << endl;
+		cin >> userInput1;
+		answer = multiply(userInput1);
+		cout << answer << " Divided by 3 = " << divide(answer) << endl;
+	}
+
+}
+
+	void smallestNumber(int n1, int n2)
+	{
+		if (n1 > n2)
 		{
-			cout << userInput2 << " is the smaller number" << endl;
+			cout << n2 << " is the smaller number" << endl;
 			cout << endl;
 		}
-		else if (userInput1 < userInput2)
+		else if (n1 < n2)
 		{
-			cout << userInput1 << " is the smaller number" << endl;
+			cout << n1 << " is the smaller number" << endl;
 			cout << endl;
 		}
 		else
@@ -35,34 +48,16 @@ int main()
 			cout << endl;
 			cout << endl;
 		}
-
-		int smallestNumber(int userInput1, int userInput2);
 	}
 
-}
-
-	int smallestNumber(int n1, int n2)
+	float multiply(int n1)
 	{
-		for (int i = 0; i < 3; i++)
-		{
-			cout << "Please imput a number to be multipled by 10 " << endl;
-			cin >> userInput1;
-			cout << userInput1 << "divided by 3 = " << answer2 << endl;
-			cout << endl;
-
-
-			cout << "and another" << endl; 
-			cin >> userInput2;
-			cout << userInput2 << "divided by 3 = " << answer2 << endl;
-			cout << endl;
-
-			cout << "and another" << endl;
-			cin >> userInput3;
-			cout << userInput2 << "divided by 3 = " << answer2 << endl;
-			cout << endl;
-
-		}
+		n1 *= 10;
+		return n1;
 	}
 
-
-
+	float divide(float n1)
+	{
+		n1 /= 3;
+		return n1;
+	}
