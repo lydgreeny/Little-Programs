@@ -11,7 +11,7 @@ bool playState();
 
 int main()
 {
- 
+	//int playerChoice;
 	while (true)
 	{
 		cout << "You have mat a troll and you have 3 options to attack." << endl;
@@ -44,8 +44,8 @@ void attackChoice(int n1)
 		cout << "You have hit the troll " << endl;
 		cout << "The troll has hit you " << endl;
 		
-		if (playerHealth >= 0 == 0)
-		if (enemyHealth >= 0 == 0)
+		if (playerHealth <= 0 == 0)
+		if (enemyHealth <= 0 == 0)
 
 		cout << "Player health is " << playerHealth << endl; 
 	    cout << "Enemy health is " << enemyHealth << endl;
@@ -70,8 +70,8 @@ void attackChoice(int n1)
 		cout << "You have hit the troll " << endl;
 		cout << "The troll has hit you " << endl;
 
-		if (playerHealth >= 0 == 0)
-		if (enemyHealth >= 0 == 0)
+		if (playerHealth <= 0 == 0)
+		if (enemyHealth <= 0 == 0)
 
 		cout << "Player health is " << playerHealth << endl;
 		cout << "Enemy health is " << enemyHealth << endl;
@@ -90,7 +90,9 @@ bool playState()
 		cin >> playerChoice;
 		if (playerChoice == 'Y')
 		{
-
+			int playerHealth = 1000;
+			int enemyHealth = 1000;
+			troo == true;
 		}
 		else
 		{
@@ -99,6 +101,6 @@ bool playState()
 	}
 
 
-	return troo;
+	return false;
 
 }
