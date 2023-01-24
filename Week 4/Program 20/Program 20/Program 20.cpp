@@ -2,16 +2,16 @@
 using namespace std;
 
 int playerHealth = 1000;
-int enemyHealth = 1000;
+int enemyHealth = 2000;
 bool troo = true; 
-int playerChoice;
+//int playerChoice;
 
 void attackChoice(int n1); 
 bool playState();
 
 int main()
 {
-	//int playerChoice;
+	int playerChoice;
 	while (true)
 	{
 		cout << "You have mat a troll and you have 3 options to attack." << endl;
@@ -82,6 +82,7 @@ void attackChoice(int n1)
 bool playState()
 {
 	char playAgain; 
+	int playerChoice;
 
 	if (enemyHealth <= 0);
 	{
