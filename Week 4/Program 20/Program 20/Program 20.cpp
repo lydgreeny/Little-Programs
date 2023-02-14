@@ -71,12 +71,12 @@ void attackChoice(int n1)
 		cout << "You have hit the troll " << endl;
 		cout << "The troll has hit you " << endl;
 
-		if (playerHealth >= 0)
+		if (playerHealth <= 0)
 		{
 			int playerHealth = 0;
 		}
 
-		if (enemyHealth >= 0)
+		if (enemyHealth <= 0)
 		{
 			int enemyHealth = 0;
 		}
@@ -105,14 +105,14 @@ void attackChoice(int n1)
 		{
 			int enemyHealth = 0;
 		}
-
+		cout << enemyHealth << endl;
 		cout << endl;
-
+	
 		cout << "Player health is " << playerHealth << endl;
 		cout << "Enemy health is " << enemyHealth << endl;
-
+	
 		cout << endl;
-
+		 
 	break;
 	}
 }
@@ -139,7 +139,6 @@ bool playState()
 		}
 	}
 
-
-	return false;
+    return true;
 
 }
