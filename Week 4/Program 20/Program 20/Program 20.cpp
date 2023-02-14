@@ -19,6 +19,7 @@ int main()
 		cout << "2 = use magic" << endl;
 		cout << "3 = use axe" << endl;
 		cout << "Choices have different effects" << endl; 
+		cout << endl;
 		cin >> playerChoice;
 
 		attackChoice(playerChoice);
@@ -35,6 +36,7 @@ void attackChoice(int n1)
 	const int troll_sword = 350;
 	const int troll_magic = 50;
 	const int troll_axe = 100;
+	cout << endl;
 
 	switch (n1)
 	{
@@ -43,12 +45,24 @@ void attackChoice(int n1)
 		playerHealth -= troll_sword;
 		cout << "You have hit the troll " << endl;
 		cout << "The troll has hit you " << endl;
-		
-		if (playerHealth <= 0 == 0)
-		if (enemyHealth <= 0 == 0)
+
+		if (playerHealth >= 0)
+		{
+			int playerHealth = 0;
+		}
+
+		if (enemyHealth >= 0)
+		{
+			int enemyHealth = 0;
+		}
+
+		cout << endl;
 
 		cout << "Player health is " << playerHealth << endl; 
 	    cout << "Enemy health is " << enemyHealth << endl;
+
+		cout << endl;
+
 	break;
 	
 	case 2:
@@ -57,11 +71,23 @@ void attackChoice(int n1)
 		cout << "You have hit the troll " << endl;
 		cout << "The troll has hit you " << endl;
 
-		if (playerHealth >= 0 == 0)
-		if (enemyHealth >= 0 == 0)
+		if (playerHealth >= 0)
+		{
+			int playerHealth = 0;
+		}
+
+		if (enemyHealth >= 0)
+		{
+			int enemyHealth = 0;
+		}
+
+		cout << endl;
 
 		cout << "Player health is " << playerHealth << endl;
 		cout << "Enemy health is " << enemyHealth << endl;
+
+		cout << endl;
+
 	break;
 
 	case 3:
@@ -70,11 +96,23 @@ void attackChoice(int n1)
 		cout << "You have hit the troll " << endl;
 		cout << "The troll has hit you " << endl;
 
-		if (playerHealth <= 0 == 0)
-		if (enemyHealth <= 0 == 0)
+		if (playerHealth <= 0)
+		{
+			int playerHealth = 0;
+		}
+
+		if (enemyHealth <= 0)
+		{
+			int enemyHealth = 0;
+		}
+
+		cout << endl;
 
 		cout << "Player health is " << playerHealth << endl;
 		cout << "Enemy health is " << enemyHealth << endl;
+
+		cout << endl;
+
 	break;
 	}
 }
@@ -84,7 +122,7 @@ bool playState()
 	char playAgain; 
 	int playerChoice;
 
-	if (enemyHealth <= 0);
+	if (enemyHealth == 0);
 	{
 		cout << "You have killed the troll and won" << endl;
 		cout << "Play again? Y or N" << endl;
@@ -93,11 +131,11 @@ bool playState()
 		{
 			int playerHealth = 1000;
 			int enemyHealth = 1000;
-			troo == true;
+			troo = true;
 		}
 		else
 		{
-			troo == false;
+			troo = false;
 		}
 	}
 
