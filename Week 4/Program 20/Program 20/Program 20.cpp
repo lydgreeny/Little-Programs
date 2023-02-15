@@ -137,6 +137,7 @@ void playState()
 		}
 		else if ((playAgain) == 'N')
 		{
+			cout << "Thankyou for playing " << endl;
 			troo = false;
 		}
 	}
