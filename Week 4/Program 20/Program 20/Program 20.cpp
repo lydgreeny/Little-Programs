@@ -3,24 +3,23 @@ using namespace std;
 
 int playerHealth = 1000;
 int enemyHealth = 2000;
-bool troo = true; 
+bool troo = true;
 
-void attackChoice(int n1); 
+void attackChoice(int n1);
 void playState();
 
 int main()
 {
 	int playerChoice;
-	while (true)
+	while (troo)
 	{
 		cout << "You have met a troll and you have 3 options to attack." << endl;
 		cout << "1 = Sword" << endl;
 		cout << "2 = use magic" << endl;
 		cout << "3 = use axe" << endl;
-		cout << "Choices have different effects" << endl; 
+		cout << "Different choices have different effects" << endl;
 		cout << endl;
 		cin >> playerChoice;
-
 		attackChoice(playerChoice);
 		playState();
 	}
@@ -57,13 +56,13 @@ void attackChoice(int n1)
 
 		cout << endl;
 
-		cout << "Player health is " << playerHealth << endl; 
-	    cout << "Enemy health is " << enemyHealth << endl;
+		cout << "Player health is " << playerHealth << endl;
+		cout << "Enemy health is " << enemyHealth << endl;
 
 		cout << endl;
 
 		break;
-	
+
 	case 2:
 		enemyHealth -= magicDamage;
 		playerHealth -= troll_magic;
@@ -87,7 +86,7 @@ void attackChoice(int n1)
 
 		cout << endl;
 
-	break;
+		break;
 
 	case 3:
 		enemyHealth -= axeDamage;
@@ -104,45 +103,42 @@ void attackChoice(int n1)
 		{
 			enemyHealth = 0;
 		}
-		cout << enemyHealth << endl;
+
 		cout << endl;
-	
+
 		cout << "Player health is " << playerHealth << endl;
 		cout << "Enemy health is " << enemyHealth << endl;
-	
-		cout << endl;
-		 
-	break;
 
-defult: cout << "Not a valid choice" << endl;
+		cout << endl;
+
+		break;
+
+	    default:cout << "not a valid choice" << endl;
 	}
 }
 
 void playState()
 {
-	char playerChoice;
+	char playAgain;
 
-	if (enemyHealth == 0)
+	if (enemyHealth == 0 || playerHealth == 0)
 	{
-		cout << "You killed the troll! Play again? " << endl;
-	}
-	else (playerHealth == 0)
-	{
-		cout << "You died! Play again? " << endl;
-	}
-
-		cin >> playerChoice;
-		if (playerChoice == 'Y')
+		if (enemyHealth == 0)
+			cout << "You have killed the troll and won" << endl;
+		else
+			cout << "You have been killed by the troll and lost" << endl;
+		cout << "Play again? Y or N" << endl;
+		cin >> playAgain;
+		if ((playAgain) == 'Y')
 		{
-			int playerHealth = 1000;
-			int enemyHealth = 2000;
+			playerHealth = 1000;
+			enemyHealth = 2000;
 			troo = true;
 		}
-		else
+		else if ((playAgain) == 'N')
 		{
 			troo = false;
 		}
 	}
-
-  //  return true;
+}
 
