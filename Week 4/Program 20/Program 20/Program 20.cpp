@@ -4,17 +4,16 @@ using namespace std;
 int playerHealth = 1000;
 int enemyHealth = 2000;
 bool troo = true; 
-//int playerChoice;
 
 void attackChoice(int n1); 
-bool playState();
+void playState();
 
 int main()
 {
 	int playerChoice;
 	while (true)
 	{
-		cout << "You have mat a troll and you have 3 options to attack." << endl;
+		cout << "You have met a troll and you have 3 options to attack." << endl;
 		cout << "1 = Sword" << endl;
 		cout << "2 = use magic" << endl;
 		cout << "3 = use axe" << endl;
@@ -46,14 +45,14 @@ void attackChoice(int n1)
 		cout << "You have hit the troll " << endl;
 		cout << "The troll has hit you " << endl;
 
-		if (playerHealth >= 0)
+		if (playerHealth <= 0)
 		{
-			int playerHealth = 0;
+			playerHealth = 0;
 		}
 
-		if (enemyHealth >= 0)
+		if (enemyHealth <= 0)
 		{
-			int enemyHealth = 0;
+			enemyHealth = 0;
 		}
 
 		cout << endl;
@@ -63,7 +62,7 @@ void attackChoice(int n1)
 
 		cout << endl;
 
-	break;
+		break;
 	
 	case 2:
 		enemyHealth -= magicDamage;
@@ -73,12 +72,12 @@ void attackChoice(int n1)
 
 		if (playerHealth <= 0)
 		{
-			int playerHealth = 0;
+			playerHealth = 0;
 		}
 
 		if (enemyHealth <= 0)
 		{
-			int enemyHealth = 0;
+			enemyHealth = 0;
 		}
 
 		cout << endl;
@@ -98,12 +97,12 @@ void attackChoice(int n1)
 
 		if (playerHealth <= 0)
 		{
-			int playerHealth = 0;
+			playerHealth = 0;
 		}
 
 		if (enemyHealth <= 0)
 		{
-			int enemyHealth = 0;
+			enemyHealth = 0;
 		}
 		cout << enemyHealth << endl;
 		cout << endl;
@@ -114,23 +113,29 @@ void attackChoice(int n1)
 		cout << endl;
 		 
 	break;
+
+defult: cout << "Not a valid choice" << endl;
 	}
 }
 
-bool playState()
+void playState()
 {
-	char playAgain; 
-	int playerChoice;
+	char playerChoice;
 
-	if (enemyHealth == 0);
+	if (enemyHealth == 0)
 	{
-		cout << "You have killed the troll and won" << endl;
-		cout << "Play again? Y or N" << endl;
+		cout << "You killed the troll! Play again? " << endl;
+	}
+	else (playerHealth == 0)
+	{
+		cout << "You died! Play again? " << endl;
+	}
+
 		cin >> playerChoice;
 		if (playerChoice == 'Y')
 		{
 			int playerHealth = 1000;
-			int enemyHealth = 1000;
+			int enemyHealth = 2000;
 			troo = true;
 		}
 		else
@@ -139,6 +144,5 @@ bool playState()
 		}
 	}
 
-    return true;
+  //  return true;
 
-}
